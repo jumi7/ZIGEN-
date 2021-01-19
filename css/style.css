@@ -209,13 +209,13 @@ main {
   z-index : 10;
 }
 
-.notice {
+.info {
   width: 1000px;
   margin: 50px auto 50px;
   padding: 50px auto 50px;  /* 効いてない？ */
 }
 
-.notice p {
+.info p {
   color: #ff0000;
   background-color: #f5f5f5;
   text-align: center;
