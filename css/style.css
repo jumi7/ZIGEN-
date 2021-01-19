@@ -226,10 +226,6 @@ main {
   text-decoration-color:#ff0000; /* 効いてない？ */
 }
 
-.ranking-item{
-  display: flex;
-  
-}
 .ranking h2 {
   font-weight: bold;
   text-align: center;
@@ -242,15 +238,20 @@ main {
   list-style: none;
 }
 
-.ranking img {
-  width: 180px;
-  height: 180px;
-}
-
 .top_ranking {
   color: #ffffff;
   background-color: #000;
   width: 2rem;
   height: 2rem;
   text-align: center;
+}
+
+.ranking img {
+  width: 180px;
+  height: 180px;
+}
+
+.ranking p {
+  width: 180px;
+  font-size: 12px;
 }
