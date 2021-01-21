@@ -12,7 +12,10 @@ body{
 
 h2 {
   font-weight: bold;
-}
+  text-align: center;
+  margin: 5rem auto 2rem;
+  }
+
 
 a {
   color: #000;
@@ -227,15 +230,9 @@ main {
   text-align: center;
 }
 
-.notice:hover {
-  text-decoration : underline;
+.info:hover {
+  text-decoration : underline solid red;
   text-decoration-color:#ff0000; /* 効いてない？ */
-}
-
-.ranking h2 {
-  /* font-weight: bold; */
-  text-align: center;
-  margin: 5rem auto 2rem;
 }
 
 .ranking-item{
@@ -327,3 +324,47 @@ button {
 .btn-14:active {
   top: 2px;
 }
+
+/* contents */
+.contents-grid {
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 5px;
+}
+
+/* 画像ズーム https://weconet.co.jp/css_image_zoom/ */
+.grid-img-box {
+  width: 360px;
+  height: 200px;
+  margin:0 auto; 
+  overflow:hidden;
+}
+
+.grid-img-box img {
+  transition:1s all;
+}
+
+.grid-img-box img:hover {
+  transform:scale(1.2,1.2);
+  transition:1s all;
+}
+
+
+.grid-item {
+  width: 360px;
+  height: 350px;
+}
+
+.grid-p {
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;  
+  justify-content: space-between;
+}
+
+.grid-item i {
+  margin-top: 20px;
+}
+/* 学び a要素の中にブロックは作れない */
