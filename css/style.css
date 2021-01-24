@@ -11,9 +11,15 @@ body{
 }
 
 h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   margin: 5rem auto 2rem;
+  }
+
+  p {
+    font-family: Yu Gothic;
   }
 
 
@@ -274,6 +280,7 @@ main {
     padding-top: 100px;
     padding-left: 72px;
 }
+/* positionなしが1番良かった */
 
 /* VIEW MORE ボタン https://deshinon.com/2019/03/02/simple-button-css/*/
 .buttons-coll {
@@ -364,7 +371,175 @@ button {
   justify-content: space-between;
 }
 
+
 .grid-item i {
   margin-top: 20px;
 }
 /* 学び a要素の中にブロックは作れない */
+
+/* container */
+.container {
+  /* background-color: #F5F6F8; */
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content:center;
+  font-size: 15px;
+}
+
+.container h2 {
+  text-align: left;
+  margin: 40px 0;
+}
+
+/* news */
+.news {
+  width: 500px;
+  margin-right: 20px;
+}
+
+.news-item {
+  width: 450px;
+  margin-top: 30px;
+}
+
+.news b {
+  font-size: 18PX;
+}
+
+.news p{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.news span {
+  color: #fff;
+  background-color: #42A4B8;
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+/* media */
+.media {
+  width: 500px;
+  /* margin: 0 auto; */
+  display: block;
+}
+
+.media-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* VIEW ALL ボタン https://deshinon.com/2019/03/02/simple-button-css/*/
+.buttons-coll-2 {
+  /* width: 100px; */
+  /* height: 40px; */
+  /* font-size: 10px; */
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 30px;
+  text-align: left;
+  /* border: 2px solid #000; */
+}
+button {
+  margin: 20px;
+}
+.custom-btn-2 {
+  padding: 5px 10px;
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 500;
+  /* background: transparent; */
+  background: #000;
+  /* outline: none !important; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+/**** BTN No. 14 ****/
+.btn-14-2 {
+  border: 2px solid #000;
+  z-index: 1;
+}
+.btn-14-2:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  /* left: 0; */
+  z-index: -1;
+  /* background: #000; */
+  transition: all 0.3s ease;
+  border-left: 2px solid #000;
+}
+.btn-14-2:hover {
+  color: #000;
+  background: #F5F6F8;
+  transition: all 0.3s ease;
+  /* border: 2px solid #000; */
+}
+.btn-14-2:hover:after {
+  left: 100%;
+  width: 100%;
+  background: #F5F6F8;
+  transition: all 0.3s ease;
+}
+.btn-14-2:active {
+  top: 2px;
+}
+
+.media-item {
+  width: 450px;
+  height: 200px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* 画像ズーム */
+.media-img-box {
+  width: 110px;
+  height: 160px;
+  margin-top: 25px; 
+  margin-left: 20px;
+  /* overflow:hidden; */
+}
+
+.media-img-box img {
+  transition:1s all;
+}
+
+.media-img-box img:hover {
+  transform:scale(1.1,1.1);
+  transition:1s all;
+}
+
+.media-item-p {
+  width: 280px;
+  height: 160px;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+
+/* .about {
+  max-width: 100%;
+  height: 800px;
+  background-image: url(..images/img_about.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  height: 57em;
+  position: relative;
+}
+
+.about-wapper {
+  position: absolute;
+  background-color: #fff;
+  width: 600px;
+  height: 620px;
+} */
