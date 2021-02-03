@@ -164,7 +164,7 @@ img {
 nav.globalMenuSp {
   /* position: fixed; 引用先*/
   position: absolute;
-  z-index : 32;
+  z-index : -32;
   top  : 0px;
   left : 0;
   color: #000;
